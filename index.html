@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de développeur et publications techniques">
+    <meta name="robots" content="index, follow">
+    <title>Mon portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .project {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            flex: 1 1 calc(33.333% - 40px);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        .no-projects {
+            font-style: italic;
+            color: #666;
+        }
+
+        .publications {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .publication {
+            display: flex;
+            align-items: center;
+        }
+
+        .publication img {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+        }
+
+        .publication h3 {
+            margin: 0;
+        }
+
+        .publication p {
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .project, .publication {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Victor MICHEL</h1>
+        <p>Découvrez mes publications et mes projets.</p>
+    </header>
+
+    <nav>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projets</a>
+    </nav>
+
+    <section id="publications">
+        <h2>Publications</h2>
+        <p>Retrouvez mes publications techniques sur <a href="https://zestedesavoir.com/@Vk" target="_blank">Zeste de Savoir</a> :</p>
+        <div class="publications">
+            <div class="publication">
+                <img src="https://zestedesavoir.com/media/galleries/2660/cf17d2ff-de25-4428-be67-532fe041fd06.png.60x60_q95_crop.jpg" alt="Image Turtle">
+                <div>
+                    <h3>À la découverte de turtle</h3>
+                    <p>Un tutoriel sur le module turtle de Python pour vulgariser l'apprentissage du développement informatique. Ce contenu est mon plus consulté à ce jour avec des pics à plus de 3500 vues uniques par mois.</p>
+                    <a href="https://zestedesavoir.com/tutoriels/944/a-la-decouverte-de-turtle/">Lire le tutoriel</a>
+                </div>
+            </div>
+            <div class="publication">
+                <img src="https://zestedesavoir.com/media/galleries/24074/c85bb093-2a0b-45b3-891b-541cf7d61628.png.60x60_q95_crop.png" alt="Crontab Guru">
+                <div>
+                    <h3>Présentation de crontab guru</h3>
+                    <p>Un billet pour présenter l'utilitaire crontab guru afin de faciliter la création de tâches planifiées. Ce contenu est consulté aux alentours de 1000 vues uniques par mois.</p>
+                    <a href="https://zestedesavoir.com/contenus/4691/presentation-de-crontab-guru/">Lire le billet</a>
+                </div>
+            </div>
+            <div class="publication">
+                <img src="https://zestedesavoir.com/media/galleries/3209/94742efe-ac56-43a2-baf5-b427443c609a.png.60x60_q95_crop.png" alt="Bases de données en Python">
+                <div>
+                    <h3>Des bases de données en Python avec sqlite3</h3>
+                    <p>Un tutoriel sur le module sqlite3 de Python pour expliquer l'usage de cette bibliothèque de base de données. Ce contenu est consulté aux alentours de 1000 vues uniques par mois.</p>
+                    <a href="https://zestedesavoir.com/tutoriels/1294/des-bases-de-donnees-en-python-avec-sqlite3/">Lire le tutoriel</a>
+                </div>
+            </div>
+            <div class="publication">
+                <img src="https://zestedesavoir.com/media/galleries/24402/7306063c-e895-4a7a-b4e2-16611e1f33bf.png.60x60_q95_crop.png" alt="VBA avec Excel">
+                <div>
+                    <h3>Notions de VBA avancées avec Excel</h3>
+                    <p>Un tutoriel pour vulgariser des notions avancées de VBA sur Excel (en préparation avec les billets publiés).</p>
+                    <a href="https://zestedesavoir.com/billets/voir/Vk/?filter=public">Lire les billets</a>
+                </div>
+            </div>
+            <div class="publication">
+                <img src="https://zestedesavoir.com/media/galleries/3001/7550d085-c965-45f2-8407-24bd463e8f0e.jpg.60x60_q95_crop.jpg" alt="Méthode des Grosses Pierres">
+                <div>
+                    <h3>La méthode des Grosses Pierres</h3>
+                    <p>Un article pour présenter la méthode d'organisation des grosses pierres.</p>
+                    <a href="https://zestedesavoir.com/articles/1155/la-methode-des-grosses-pierres/">Lire l'article</a>
+                </div>
+            </div>
+            <div class="publication">
+                <img src="https://zestedesavoir.com/media/galleries/3376/957f9d51-2903-4ba1-9c7d-72ca3e33010f.png.60x60_q95_crop.jpg" alt="Casse-briques en Lua">
+                <div>
+                    <h3>Un jeu de casse-briques en Lua avec Love2D</h3>
+                    <p>Un tutoriel pour aborder de façon pratique le moteur LÖVE en Lua.</p>
+                    <a href="https://zestedesavoir.com/tutoriels/1399/un-jeu-de-casse-briques-en-lua-avec-love2d/">Lire le tutoriel</a>
+                </div>
+            </div>
+            <div class="publication">
+                <img src="https://zestedesavoir.com/media/galleries/24074/c85bb093-2a0b-45b3-891b-541cf7d61628.png.60x60_q95_crop.png" alt="HTTP Observatory">
+                <div>
+                    <h3>Présentation de HTTP Observatory</h3>
+                    <p>Un billet pour présenter l'utilitaire HTTP Observatory afin d'analyser de façon automatisée la sécurité de sites web.</p>
+                    <a href="https://zestedesavoir.com/contenus/4700/presentation-de-http-observatory/">Lire le billet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projets</h2>
+        <div class="projects">
+            <p class="no-projects">Aucun projet disponible pour le moment. Revenez plus tard pour découvrir mes réalisations.</p>
+        </div>
+    </section>
+</body>
+</html>
